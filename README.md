@@ -1,6 +1,28 @@
-# terraform-aws-cloudwatch
+# AWS Cloudwatch (Log Group) Terraform Module
 
-Terraform module which creates Cloudwatch resources on AWS
+Terraform module to provision [`Cloudwatch Log Group`](https://aws.amazon.com/cloudwatch/) on AWS.
+
+## Usage
+
+### Setup
+
+Create a Cloudwatch Log Group.
+```hcl
+    module "iam_policy" {
+        source              = "git@github.com:nclouds/terraform-aws-cloudwatch.git?ref=v0.1.0"
+        identifier          = "example"
+        etention_in_days    = 7
+        tags                = {
+            Owner       = "sysops"
+            env         = "dev"
+            Cost_Center = "XYZ"
+        }
+    }
+```
+
+## Examples
+Here are some working examples of using this module:
+- [`examples/`](examples/)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
