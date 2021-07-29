@@ -10,7 +10,7 @@ Create a Cloudwatch Log Group.
 ```hcl
     module "log_group" {
         source              = "app.terraform.io/ncodelibrary/cloudwatch/aws"
-        version             = "0.1.2"
+        version             = "0.1.3"
         identifier          = "example"
         retention_in_days   = 7
         tags                = {
@@ -23,7 +23,7 @@ Create a Cloudwatch Log Group.
 
 ## Examples
 Here are some working examples of using this module:
-- [`examples/`](examples/)
+- [`examples/simple`](examples/simple)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
