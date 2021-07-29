@@ -1,3 +1,6 @@
+[SourceCode](https://github.com/nclouds/terraform-aws-cloudwatch/tree/v0.1.2/examples)   
+[Report an Issue](https://github.com/nclouds/terraform-aws-cloudwatch/issues)
+
 # Simple Cloudwatch Log Group example
 
 Configuration in this directory creates the following Resources:
