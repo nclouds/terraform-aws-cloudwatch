@@ -23,7 +23,7 @@ Create a Cloudwatch Log Group.
 
 ## Examples
 Here are some working examples of using this module:
-- [`examples/`](examples/)
+- [`examples/simple`](examples/simple)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
