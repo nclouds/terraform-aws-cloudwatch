@@ -38,20 +38,32 @@ Here are some working examples of using this module:
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_cloudwatch_log_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| identifier | The name of the security group | `string` | n/a | yes |
+| append\_workspace | Appends the terraform workspace at the end of resource names, <identifier>-<worspace> | `bool` | `true` | no |
+| identifier | The name of the log group | `string` | `"test"` | no |
+| kms\_key\_id | The ARN of the KMS Key to use when encrypting log data | `string` | `null` | no |
 | retention\_in\_days | Specifies the number of days you want to retain log events in the specified log group. Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, and 3653. | `number` | `30` | no |
-| tags | Tags to be applied to the resource | `map` | `{}` | no |
+| tags | Tags to be applied to the resource | `map(any)` | `{}` | no |
+| use\_name\_prefix | Allow terraform to append a unique string at the end of resource names | `bool` | `true` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | output | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Contributing
