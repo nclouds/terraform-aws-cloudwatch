@@ -1,5 +1,5 @@
 module "example_log_group" {
-  source            = "../"
+  source            = "../.."
   retention_in_days = 7
   identifier        = var.identifier
   tags              = var.tags
