@@ -1,4 +1,9 @@
-# AWS Cloudwatch (Log Group) Terraform Module
+<p align="left"><img width=400 height="100" src="https://www.nclouds.com/img/nclouds-logo.svg"></p>  
+
+![Terraform](https://github.com/nclouds/terraform-aws-cloudwatch/workflows/Terraform/badge.svg)
+# nCode Library
+
+## AWS Cloudwatch (Log Group) Terraform Module
 
 Terraform module to provision [`Cloudwatch Log Group`](https://aws.amazon.com/cloudwatch/) on AWS.
 
