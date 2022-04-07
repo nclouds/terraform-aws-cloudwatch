@@ -15,7 +15,7 @@ Create a Cloudwatch Log Group.
 ```hcl
     module "log_group" {
         source              = "app.terraform.io/ncodelibrary/cloudwatch/aws"
-        version             = "0.1.4"
+        version             = "0.1.5"
         identifier          = "example"
         retention_in_days   = 7
         tags                = {
