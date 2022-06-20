@@ -14,8 +14,7 @@ Terraform module to provision [`Cloudwatch Log Group`](https://aws.amazon.com/cl
 Create a Cloudwatch Log Group.
 ```hcl
     module "log_group" {
-        source              = "app.terraform.io/ncodelibrary/cloudwatch/aws"
-        version             = "0.1.5"
+        source              = "git@github.com:nclouds/terraform-aws-cloudwatch.git?ref=v0.1.5"
         identifier          = "example"
         retention_in_days   = 7
         tags                = {
