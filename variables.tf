@@ -10,6 +10,12 @@ variable "retention_in_days" {
   type        = number
 }
 
+variable "provision_key" {
+  description = "whether to use a provisioned key or not"
+  default     = false
+  type        = bool
+}
+
 variable "kms_key_id" {
   description = "The ARN of the KMS Key to use when encrypting log data"
   default     = null
