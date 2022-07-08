@@ -10,6 +10,12 @@ variable "retention_in_days" {
   type        = number
 }
 
+variable "use_custom_kms_key" {
+  description = "Set to 'true' if you are passing a custom KMS Key ARN"
+  default     = false
+  type        = bool
+}
+
 variable "kms_key_id" {
   description = "The ARN of the KMS Key to use when encrypting log data"
   default     = null
