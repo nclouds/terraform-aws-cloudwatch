@@ -16,7 +16,7 @@ module "kms" {
   append_workspace = false
   deletion_window  = 10
   identifier       = local.identifier
-  # tags             = local.tags
+  tags             = local.tags
 }
 
 resource "aws_cloudwatch_log_group" "this" {
