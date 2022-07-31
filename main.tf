@@ -6,6 +6,7 @@ locals {
 module "common_tags" {
   source      = "git@github.com:nclouds/terraform-aws-common-tags.git?ref=v0.1.2"
   environment = terraform.workspace
+  name        = local.identifier
 }
 
 module "kms" {
