@@ -8,11 +8,32 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.9"></a>
+## [v0.1.9] - 2022-07-31
+BUGFIX:
+- Fix PR comments
+
+
+<a name="v0.1.8"></a>
+## [v0.1.8] - 2022-07-08
+BUG FIXES:
+- count
+
+
+<a name="v0.1.7"></a>
+## [v0.1.7] - 2022-07-08
+BUG FIXES:
+- kms arn add to outputs
+
+FEATURES:
+- kms key by default if not specified
+- Enable Slack Notifications
+
+
 <a name="v0.1.6"></a>
-## [v0.1.6] - 2022-06-21
+## [v0.1.6] - 2022-07-02
 FEATURES:
 - Enable nClouds PreCommit Hook
-- ENable OPA Checks
 
 
 <a name="v0.1.5"></a>
@@ -56,7 +77,10 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.6...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.9...HEAD
+[v0.1.9]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.8...v0.1.9
+[v0.1.8]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.7...v0.1.8
+[v0.1.7]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.5...v0.1.6
 [v0.1.5]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.3...v0.1.4
