@@ -1,11 +1,12 @@
 locals {
   identifier = var.append_workspace ? "${var.identifier}-${terraform.workspace}" : var.identifier
+  tags       = merge(module.common_tags.output, var.tags)
+}
 
-  default_tags = {
-    Environment = terraform.workspace
-    Name        = local.identifier
-  }
-  tags = merge(local.default_tags, var.tags)
+module "common_tags" {
+  source      = "git@github.com:nclouds/terraform-aws-common-tags.git?ref=v0.1.2"
+  environment = terraform.workspace
+  name        = local.identifier
 }
 
 module "kms" {
