@@ -39,3 +39,4 @@ jobs:
         run: |
           make changelog
           make release
+        shell: bash
