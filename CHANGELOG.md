@@ -8,9 +8,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.11"></a>
+## [v0.1.11] - 2022-08-19
+FEATURES:
+- Automate Release Notes
+
+
 <a name="v0.1.10"></a>
 ## [v0.1.10] - 2022-08-02
 FEATURES:
+- Ensure OPA Compliance
 - Ensure OPA Compliance
 
 
@@ -82,7 +89,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.10...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.11...HEAD
+[v0.1.11]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.10...v0.1.11
 [v0.1.10]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.9...v0.1.10
 [v0.1.9]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.8...v0.1.9
 [v0.1.8]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.7...v0.1.8
