@@ -10,6 +10,7 @@ SED=sed -i ''
 else
 SED=sed -i
 endif
+SHELL:=/bin/bash
 
 .PHONY: changelog release
 
@@ -20,7 +21,7 @@ changelog:
 	git-chglog -o CHANGELOG.md --next-tag $(NEXT_TAG)
 	$(SED) "s/$(CURRENT_TAG)/$(NEXT_TAG)/g" README.md
 	EXAMPLES=$(shell find ./examples -mindepth 1 -maxdepth 1 -type d -exec echo {} \;)
-	if [ -z $$EXAMPLES ]; then \
+	if [[ -z $$EXAMPLES ]]; then \
 		$(SED) "s/$(CURRENT_TAG)/$(NEXT_TAG)/g" ./examples/README.md;\
 	else \
 		for EXAMPLE in $$EXAMPLES; do echo "$$EXAMPLE/README.md"; $(SED) "s/$(CURRENT_TAG)/$(NEXT_TAG)/g" $$EXAMPLE/README.md; done;\
