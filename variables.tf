@@ -39,3 +39,9 @@ variable "tags" {
   default     = {}
   type        = map(any)
 }
+
+variable "region" {
+  description = "Region where the VPC will be deployed"
+  type        = string
+  default     = "us-east-1"
+}

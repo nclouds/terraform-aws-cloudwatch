@@ -18,6 +18,7 @@ module "kms" {
   deletion_window  = 10
   identifier       = local.identifier
   tags             = local.tags
+  policy           = data.aws_iam_policy_document.combined.json
 }
 
 resource "aws_cloudwatch_log_group" "this" {

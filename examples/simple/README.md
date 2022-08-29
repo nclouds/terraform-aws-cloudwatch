@@ -1,4 +1,4 @@
-[SourceCode](https://github.com/nclouds/terraform-aws-cloudwatch/tree/v0.1.13/examples/simple)   
+[SourceCode](https://github.com/nclouds/terraform-aws-cloudwatch/tree/master/examples/simple)   
 [Report an Issue](https://github.com/nclouds/terraform-aws-cloudwatch/issues)
 
 # Simple Cloudwatch Log Group example
