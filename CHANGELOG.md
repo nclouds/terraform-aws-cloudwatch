@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.15"></a>
+## [v0.1.15] - 2022-08-29
+
+- Allow Cloudwatch to use KMS Key
+
+
 <a name="v0.1.14"></a>
 ## [v0.1.14] - 2022-08-20
 
@@ -106,7 +112,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.14...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.15...HEAD
+[v0.1.15]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.14...v0.1.15
 [v0.1.14]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.13...v0.1.14
 [v0.1.13]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.12...v0.1.13
 [v0.1.12]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.11...v0.1.12
