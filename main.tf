@@ -10,7 +10,7 @@ module "common_tags" {
 }
 
 module "kms" {
-  source = "github.com/nclouds/terraform-aws-kms?ref=v0.1.0"
+  source = "github.com/nclouds/terraform-aws-kms?ref=v0.1.5"
 
   count = !var.use_custom_kms_key ? 1 : 0
 
