@@ -4,13 +4,13 @@ locals {
 }
 
 module "common_tags" {
-  source      = "git@github.com:nclouds/terraform-aws-common-tags.git?ref=v0.1.2"
+  source      = "github.com/nclouds/terraform-aws-common-tags?ref=v0.1.2"
   environment = terraform.workspace
   name        = local.identifier
 }
 
 module "kms" {
-  source = "git@github.com:nclouds/terraform-aws-kms.git?ref=v0.1.0"
+  source = "github.com/nclouds/terraform-aws-kms?ref=v0.1.5"
 
   count = !var.use_custom_kms_key ? 1 : 0
 
