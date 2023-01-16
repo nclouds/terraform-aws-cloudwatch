@@ -8,8 +8,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.17"></a>
+## [v0.1.17] - 2023-01-16
+
+
+
 <a name="v0.1.16"></a>
-## [v0.1.16] - 2022-09-19
+## [v0.1.16] - 2022-09-24
 DOCS:
 - Update Release Documentation
 
@@ -118,7 +123,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.16...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.17...HEAD
+[v0.1.17]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.16...v0.1.17
 [v0.1.16]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.15...v0.1.16
 [v0.1.15]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.14...v0.1.15
 [v0.1.14]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.13...v0.1.14
