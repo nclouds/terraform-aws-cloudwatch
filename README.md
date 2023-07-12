@@ -46,8 +46,8 @@ Here are some working examples of using this module:
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_common_tags"></a> [common\_tags](#module\_common\_tags) | github.com/nclouds/terraform-aws-common-tags | v0.1.2 |
-| <a name="module_kms"></a> [kms](#module\_kms) | github.com/nclouds/terraform-aws-kms | v0.1.0 |
+| <a name="module_common_tags"></a> [common\_tags](#module\_common\_tags) | github.com/nclouds/terraform-aws-common-tags?ref=v0.1.2 |  |
+| <a name="module_kms"></a> [kms](#module\_kms) | github.com/nclouds/terraform-aws-kms?ref=v0.1.5 |  |
 
 ## Resources
 
@@ -58,6 +58,7 @@ Here are some working examples of using this module:
 | [aws_iam_policy_document.cloudwatch_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.combined](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.kms_owner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 
 ## Inputs
 
@@ -66,7 +67,6 @@ Here are some working examples of using this module:
 | <a name="input_append_workspace"></a> [append\_workspace](#input\_append\_workspace) | Appends the terraform workspace at the end of resource names, <identifier>-<worspace> | `bool` | `true` | no |
 | <a name="input_identifier"></a> [identifier](#input\_identifier) | The name of the log group | `string` | `"test"` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | The ARN of the KMS Key to use when encrypting log data | `string` | `null` | no |
-| <a name="input_region"></a> [region](#input\_region) | Region where the VPC will be deployed | `string` | `"us-east-1"` | no |
 | <a name="input_retention_in_days"></a> [retention\_in\_days](#input\_retention\_in\_days) | Specifies the number of days you want to retain log events in the specified log group. Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, and 3653. | `number` | `30` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to the resource | `map(any)` | `{}` | no |
 | <a name="input_use_custom_kms_key"></a> [use\_custom\_kms\_key](#input\_use\_custom\_kms\_key) | Set to 'true' if you are passing a custom KMS Key ARN | `bool` | `false` | no |
