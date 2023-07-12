@@ -8,6 +8,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.18"></a>
+## [v0.1.18] - 2023-07-12
+BUG FIXES:
+- typo
+- get region from data source
+
+
 <a name="v0.1.17"></a>
 ## [v0.1.17] - 2023-01-16
 
@@ -123,7 +130,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.17...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.18...HEAD
+[v0.1.18]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.17...v0.1.18
 [v0.1.17]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.16...v0.1.17
 [v0.1.16]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.15...v0.1.16
 [v0.1.15]: https://github.com/nclouds/terraform-aws-cloudwatch/compare/v0.1.14...v0.1.15
