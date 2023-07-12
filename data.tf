@@ -30,14 +30,14 @@ data "aws_iam_policy_document" "cloudwatch_logs" {
     ]
     principals {
       type        = "Service"
-      identifiers = ["logs.${data.region.current.name}.amazonaws.com"]
+      identifiers = ["logs.${data.aws_region.current.name}.amazonaws.com"]
     }
     resources = ["*"]
     condition {
       test     = "ArnLike"
       variable = "kms:EncryptionContext:aws:logs:arn"
       values = [
-        "arn:aws:logs:${data.region.current.name}:${data.aws_caller_identity.current.account_id}:*",
+        "arn:aws:logs:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:*",
       ]
     }
   }
